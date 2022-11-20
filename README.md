@@ -5,7 +5,7 @@ For all who dont want to solder the RJ45 port to the PCB here is a work-a-round.
 ![alt text](https://github.com/Dentax/FLSUN-USB-Ethernet/blob/main/Adapter.jpg?raw=true)
 
 ## Requirements
-- USB-Ethernet Adapter
+- USB-Ethernet Adapter ***(actually it only supports RTL8152 chipsets because RTL8153 drivers are not available in the kernel)***
 - SSH access to Speederpad
 - ✨Magic ✨
 
@@ -54,7 +54,7 @@ network:
                         optional: true
                         dhcp6: no
                         addresses: [192.168.1.123/24] # Speederpad IP
-                        gateway4: 192.168.1.1 # You Gateway IP 
+                        gateway4: 192.168.1.1 # Your Gateway IP 
                         nameservers:
                          addresses: [8.8.8.8,1.1.1.1]
 ```
