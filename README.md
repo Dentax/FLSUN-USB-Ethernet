@@ -5,9 +5,15 @@ For all who dont want to solder the RJ45 port to the PCB here is a work-a-round.
 ![alt text](https://github.com/Dentax/FLSUN-USB-Ethernet/blob/main/Adapter.jpg?raw=true)
 
 ## Requirements
-- USB-Ethernet Adapter ***(actually it only supports RTL8152 chipsets because RTL8153 drivers are not available in the kernel)***
+- USB-Ethernet Adapter ***(actually it only supports RTL8152 chipsets because RTL8153 drivers are not available in the kernel by default)***
 - SSH access to Speederpad
 - ✨Magic ✨
+
+# RTL8153 Chipsets
+If your Adapter has an RTL8153 chipset you will need to add the drivers to the kernel.
+Thanks to [attilabody](https://github.com/attilabody) for adding this missing drivers: https://github.com/attilabody/speederpad-kernel/releases/tag/v0.0.0-modules
+
+After that you can try again with the following steps.
 
 # Configuration
 ### Step 1
